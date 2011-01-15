@@ -5,7 +5,7 @@ Admin::PaymentsController.class_eval do
     load_object
     if event = params[:e] 
       if @payment.payment_source
-        return old_file 
+        return old_fire 
       else  
         #Assume payment:check  TODO check this
         if event == "pay" #only respond to action we stubbed in Payment_decorator
