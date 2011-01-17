@@ -1,5 +1,4 @@
 require 'spree_core'
-require 'spree_check_fix_hooks'
 
 module SpreeCheckFix
   class Engine < Rails::Engine
