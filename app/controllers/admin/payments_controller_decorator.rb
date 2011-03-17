@@ -9,6 +9,7 @@ Admin::PaymentsController.class_eval do
         if @payment.state == "checkout" or @payment.state == "pending"
           @payment.pay
           @payment.order.update!
+          @payment.order.save
           redirect_to collection_path
         end
       else
