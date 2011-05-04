@@ -1,3 +1,7 @@
+Update
+=============
+Obsolete as of spree 0.5.2, DO NOT USE with that or later versions
+
 SpreeCheckFix
 =============
 
