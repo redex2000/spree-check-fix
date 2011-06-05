@@ -2,6 +2,20 @@ Update
 =============
 Obsolete as of spree 0.5.2, DO NOT USE with that or later versions
 
+The following fix is still needed in 0.5.2 though
+
+Admin::PaymentsController.class_eval do
+  
+  alias :old_fire  :fire
+  
+  def fire
+    old_fire
+    @payment.save
+  end
+
+end
+
+
 SpreeCheckFix
 =============
 
